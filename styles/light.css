@@ -1,7 +1,7 @@
 
 
 @media (prefers-color-scheme: light) {
-:root {  
+  :root {  
     --bg-color: var(--soft-pink-bg);
     --text-color: var(--dark-gray);
     --accent-color: var(--bright-pink);
