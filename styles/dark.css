@@ -1,12 +1,35 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
+
+@media (prefers-color-sheme: dark){
+  :root{
+    --bg-color: var(--deep-black-bg);
+    --text-color: var(--medium-pink);
+    --accent-color: var(--neon-pink);
+    --main-font: 'IBM Plex mono', sans-serif;
+    --titel-color: var(--vivid-purple);
+    --hover-color: var(--neon-pink-transparent-40);
+    --paragraph-color: var(--deep-black-bg);
+    --main-text-color: var(--medium-pink);
+    --bg-image: url("../images/cover-image-dark.png");
+    --block: inline-block;
+  }
+}
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: var(--deep-black-bg);
+  --text-color: var(--neon-pink);
+  --accent-color: var(--neon-pink);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --titel-color: var(--vivid-purple);
+  --hover-color: var(--neon-pink-transparent-40);
+  --paragraph-color: var(--deep-black-bg);
+  --main-text-color: var(--medium-pink);
+  --bg-image: url("../images/cover-image-dark.png");
+  --block: inline-block;
 }
+
+.page.theme_dark .rec {
+  display: var(--block);
+}
+
+

@@ -1,4 +1,27 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
+
+:root{
+  --soft-pink-bg: #fff1f7;            /* Мягкий розовый для фона */
+  --medium-pink: #f1b2ce;             /* Средний розовый */
+  --light-pink-accent: #ffc2e6;       /* Светло-розовый акцент */
+  --bright-pink: #ff8dcb;             /* Яркий розовый */
+  --vivid-purple: #db00ff;            /* Насыщенный пурпурный */
+  --neon-pink: #ff0070;               /* Неоново-розовый */
+  --neon-pink-transparent-40: #ff007040; /* Неоново-розовый с 40% прозрачностью */
+  --deep-black-bg: #000028;           /* Глубокий черный для фона */
+  --dark-gray: #353430;               /* Темно-серый */
+  --dark-gray-transparent-40: #35343040; /* Темно-серый с 40% прозрачностью */
+
+
+  --bg-color: var(--deep-black-bg);
+  --text-color: var(--neon-pink);
+  --accent-color: var(--neon-pink);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --titel-color: var(--vivid-purple);
+  --hover-color: var(--neon-pink-transparent-40);
+  --paragraph-color: var(--deep-black-bg);
+  --main-text-color: var(--medium-pink);
+  --bg-image: url("../images/cover-image-dark.png");
+  --block: inline-block;
+}
+

@@ -1,12 +1,33 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
+
+@media (prefers-color-scheme: light) {
+:root {  
+    --bg-color: var(--soft-pink-bg);
+    --text-color: var(--dark-gray);
+    --accent-color: var(--bright-pink);
+    --main-font: 'IBM Plex mono', sans-serif;
+    --titel-color: var(--light-pink-accent);
+    --hover-color: var(--dark-gray-transparent-40);
+    --paragraph-color: var(--dark-gray);
+    --main-text-color: var(--dark-gray);
+    --bg-image: url(../images/cover-image-light.png);
+    --block: none;
+  } 
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: var(--soft-pink-bg);
+  --text-color: var(--dark-gray);
+  --accent-color: var(--bright-pink);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --titel-color: var(--light-pink-accent);
+  --hover-color: var(--dark-gray-transparent-40);
+  --paragraph-color: var(--dark-gray);
+  --main-text-color: var(--dark-gray);
+  --bg-image: url(../images/cover-image-light.png);
+  --block: none;
+}
+
+.page.theme_light .rec{
+  display: var(--block);
 }
