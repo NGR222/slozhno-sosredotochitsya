@@ -209,8 +209,8 @@
 }
 
 .link {
-  position: relative;
   text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link:hover {
@@ -223,15 +223,6 @@
 
 .link:focus-visible {
   outline: 1px solid var(--main-text-color);
-}
-
-.link::after {
-  content: "выяснили";
-  color: var(--accent-color);
-  position: absolute;
-  inset-inline-start: 2px;
-  inset-block-start: 1px;
-  z-index: -1;
 }
 
 .concentration-section__card-list-item:not(:last-of-type) {
