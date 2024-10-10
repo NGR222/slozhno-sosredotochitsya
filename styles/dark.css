@@ -1,7 +1,7 @@
 
 
 @media (prefers-color-sheme: dark){
-  :root{
+  :root {
     --bg-color: var(--deep-black-bg);
     --text-color: var(--medium-pink);
     --accent-color: var(--neon-pink);

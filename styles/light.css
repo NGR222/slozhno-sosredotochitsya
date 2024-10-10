@@ -28,6 +28,6 @@
   --block: none;
 }
 
-.page.theme_light .rec{
+.page.theme_light .rec {
   display: var(--block);
 }
