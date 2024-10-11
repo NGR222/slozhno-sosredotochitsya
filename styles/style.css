@@ -16,6 +16,7 @@
   align-items: start;
   justify-items: start;
   grid-template-rows: 1fr min-content 1fr;
+  min-block-size: 100vh;
 }
 
 .decorated-zone {
@@ -364,6 +365,7 @@
 .footer {
   display: grid;
   min-block-size: 668px;
+  min-block-size: 100vh;
 }
 
 .final-titel {
