@@ -12,8 +12,8 @@
 .header {
   display: grid;
   padding: 10px;
-  min-block-size: 100vh;
-  align-items: start; 
+  min-block-size: 668px;
+  align-items: start;
   justify-items: start;
   grid-template-rows: 1fr min-content 1fr;
 }
@@ -45,7 +45,7 @@
 }
 
 .header__theme-menu {
-  justify-self: end; 
+  justify-self: end;
   align-self: center;
 }
 
@@ -86,7 +86,7 @@
   position: absolute;
   display: var(--block);
   justify-self: end;
-  inset-block-start: 10px; 
+  inset-block-start: 10px;
   inset-inline-end: 18px;
 }
 
@@ -127,7 +127,7 @@
 
 /* Медиа запросы */
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .header {
     padding: 20px 20px 20px 0;
   }
@@ -139,7 +139,7 @@
   .decorated-zone::before {
     inset-block-start: 20px;
     inset-inline-end: 20px;
-  } 
+  }
 
   .decorated-zone::after {
     inset-inline-start: 20px;
@@ -147,7 +147,7 @@
   }
 
   .rec {
-    inset-block-start: 20px; 
+    inset-block-start: 20px;
     inset-inline-end: 28px;
   }
 
@@ -157,14 +157,15 @@
   }
 }
 
-@media( width >= 1024px) {
+@media(width >=1024px) {
+
   .header__theme-menu {
-    justify-self: center; 
+    justify-self: center;
     align-self: flex-start;
     margin-block-start: 0;
     margin-inline-start: 15px;
   }
-  
+
   .header__theme-menu-list {
     flex-direction: row;
   }
@@ -202,10 +203,11 @@
 .section-text {
   color: var(--main-text-color);
   font-size: 18px;
+  line-height: 23px;
 }
 
 .section-text:not(:last-of-type) {
-  margin-block-end: 25px;
+  margin-block-end: 30px;
 }
 
 .link {
@@ -226,7 +228,7 @@
 }
 
 .concentration-section__card-list-item:not(:last-of-type) {
-  margin-block-end: 25px;
+  margin-block-end: 20px;
 }
 
 .concentration-section {
@@ -239,52 +241,52 @@
 }
 
 .advice-section {
-  margin-block-end: 55px;
+  margin-block-end: 40px;
 }
 
 .gallery-section__container {
   display: grid;
-  grid-template-rows: auto; 
-  gap: 10px; 
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 .image-sunset {
   inline-size: 100%;
-  block-size: auto; 
+  block-size: auto;
   object-fit: cover;
 }
 
 .image-ice-cream {
   inline-size: 100%;
-  block-size: auto; 
+  block-size: auto;
   object-fit: cover;
 }
 
 .image-tape {
   inline-size: 100%;
-  block-size: auto; 
+  block-size: auto;
   object-fit: cover;
 }
 
 .image-books {
   inline-size: 100%;
-  block-size: auto; 
+  block-size: auto;
   object-fit: cover;
 }
 
 .image-street {
   inline-size: 100%;
-  block-size: auto; 
+  block-size: auto;
   object-fit: cover;
 }
 
 /* Медиа запросы */
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .main {
     padding: 60px 20px 60px 20px;
   }
-  
+
   .focus-section {
     display: grid;
     grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr;
@@ -309,11 +311,11 @@
 
   .gallery-section__container {
     margin-block-start: 20px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto; 
-    gap: 20px 20px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    grid-template-areas:
       "sunset sunset donut"
       "player books donut"
       "player quarter quarter";
@@ -323,29 +325,29 @@
     grid-area: sunset;
     block-size: 100%;
   }
-  
+
   .image-ice-cream {
     grid-area: donut;
     block-size: 100%;
   }
-  
+
   .image-tape {
     grid-area: player;
     block-size: 100%;
   }
-  
+
   .image-books {
     grid-area: books;
     block-size: 100%;
   }
-  
+
   .image-street {
     grid-area: quarter;
     block-size: 100%;
   }
 }
 
-@media( width >= 1024px) {
+@media(width >=1024px) {
   .concentration-section__card-list {
     display: flex;
     justify-content: space-between;
@@ -361,7 +363,7 @@
 
 .footer {
   display: grid;
-  min-block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .final-titel {
@@ -375,13 +377,13 @@
 
 /* Медиа запросы */
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .final-titel {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media( width >= 1024px) {
+@media(width >=1024px) {
   .final-titel {
     text-shadow: 2px 2px 0px #ff0070;
   }

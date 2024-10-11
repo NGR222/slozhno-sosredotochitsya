@@ -1,18 +1,18 @@
 
 
 @media (prefers-color-scheme: light) {
-  :root {  
+  :root {
     --bg-color: var(--soft-pink-bg);
     --text-color: var(--dark-gray);
     --accent-color: var(--bright-pink);
-    --main-font: 'IBM Plex mono', sans-serif;
+    --main-font: 'IBM Plex mono', monospace;
     --titel-color: var(--light-pink-accent);
     --hover-color: var(--dark-gray-transparent-40);
     --paragraph-color: var(--dark-gray);
     --main-text-color: var(--dark-gray);
     --bg-image: url(../images/cover-image-light.png);
     --block: none;
-  } 
+  }
 }
 
 .page.theme_light {
