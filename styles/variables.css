@@ -16,7 +16,7 @@
   --bg-color: var(--deep-black-bg);
   --text-color: var(--neon-pink);
   --accent-color: var(--neon-pink);
-  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font: 'IBM Plex mono', monospace;
   --titel-color: var(--vivid-purple);
   --hover-color: var(--neon-pink-transparent-40);
   --paragraph-color: var(--deep-black-bg);

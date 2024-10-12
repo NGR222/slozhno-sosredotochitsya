@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font);
+  font-family: var(--main-font, 'LVC Sans');
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-position: center;
@@ -12,11 +12,11 @@
 .header {
   display: grid;
   padding: 10px;
-  min-block-size: 668px;
   align-items: start;
   justify-items: start;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -292,7 +292,7 @@
     display: grid;
     grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr;
     gap: 20px;
-    margin-block-end: 83px;
+    margin-block-end: 80px;
   }
 
   .title {
@@ -300,14 +300,14 @@
   }
 
   .concentration-section {
-    margin-block-end: 80px;
+    margin-block-end: 85px;
   }
 
   .advice-section {
     display: grid;
     grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr;
     gap: 20px;
-    margin-block-end: 80px;
+    margin-block-end: 65px;
   }
 
   .gallery-section__container {
@@ -350,13 +350,13 @@
 
 @media(width >=1024px) {
   .concentration-section__card-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
-  .concentration-section__card {
-    max-inline-size: 315px;
+  .advice-section {
+    margin-block-end: 55px;
   }
 }
 
@@ -365,7 +365,7 @@
 .footer {
   display: grid;
   min-block-size: 668px;
-  min-block-size: 100vh;
+  block-size: 100vh;
 }
 
 .final-titel {
