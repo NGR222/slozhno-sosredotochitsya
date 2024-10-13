@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, 'Courier New');
+  font-family: var(--main-font, "Courier New");
   font-size: 18px;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -103,7 +103,7 @@
   display: inline-block;
   margin-inline-start: 10px;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
   background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
@@ -158,8 +158,7 @@
   }
 }
 
-@media(width >=1024px) {
-
+@media (width >=1024px) {
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
@@ -186,31 +185,31 @@
   margin-block-end: 50px;
 }
 
-.title { 
+.title {
   margin-block-end: 20px;
-  color: var(--text-color); 
-  font-weight: 700; 
-  font-size: 18px; 
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.link { 
-  text-decoration: none; 
-  text-shadow: 2px 2px 0 var(--accent-color); 
-} 
- 
-.link:hover { 
-  border-block-end: 1px solid var(--main-text-color); 
-} 
- 
-.link:focus { 
-  outline: none; 
-} 
- 
-.link:focus-visible { 
-  outline: 1px solid var(--main-text-color); 
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.content-section__article-list-item:not(:last-of-type){
+.link:hover {
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+
+.content-section__article-list-item:not(:last-of-type) {
   margin-block-end: 30px;
 }
 
@@ -222,12 +221,12 @@
   margin-block-end: 10px;
   color: var(--paragraph-color);
   font-size: 18px;
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
 }
 
 .article-paragraph {
-  color: var(--main-text-color); 
-  font-size: 18px; 
+  color: var(--main-text-color);
+  font-size: 18px;
   line-height: 23px;
 }
 
@@ -238,132 +237,132 @@
 }
 
 .article-title-advanced {
-  font-weight: 400; 
+  font-weight: 400;
 }
 
-.gallery-section__container { 
-  display: grid; 
-  grid-template-rows: auto; 
-  gap: 10px; 
-} 
- 
-.image-sunset { 
-  object-fit: cover; 
-  inline-size: 100%; 
-  block-size: auto; 
-} 
- 
-.image-ice-cream { 
-  object-fit: cover; 
-  inline-size: 100%; 
-  block-size: auto; 
-} 
- 
-.image-tape { 
-  object-fit: cover; 
-  inline-size: 100%; 
-  block-size: auto; 
-} 
- 
-.image-books { 
-  object-fit: cover; 
-  inline-size: 100%; 
-  block-size: auto; 
-} 
- 
-.image-street { 
-  object-fit: cover; 
-  inline-size: 100%; 
-  block-size: auto; 
-} 
+.gallery-section__container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+}
 
-.gallery-section .heading{
+.image-sunset {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.image-ice-cream {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.image-tape {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.image-books {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.image-street {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.gallery-section .heading {
   margin-block-end: 10px;
 }
 
 /* Медиа запросы */
 
-@media (width >=768px) { 
-  .main { 
-    padding: 60px 20px 60px 20px; 
-  } 
+@media (width >=768px) {
+  .main {
+    padding: 60px 20px 60px 20px;
+  }
 
   .content-section {
     margin-block-end: 80px;
   }
 
-  .focus-section { 
-    display: grid; 
-    grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr; 
-    gap: 20px;  
+  .focus-section {
+    display: grid;
+    grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr;
+    gap: 20px;
   }
 
-   .content-section__article-list-item.list-item-large-gap {
+  .content-section__article-list-item.list-item-large-gap {
     margin-block-end: 20px;
-  } 
-
-  .title { 
-    inline-size: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem); 
   }
 
-  .advice-section { 
-    display: grid; 
-    grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr; 
-    gap: 20px; 
-  } 
+  .title {
+    inline-size: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem);
+  }
 
-  .gallery-section__container { 
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr;  
-    grid-template-rows: auto;  
-    grid-template-areas:  
-      "sunset sunset donut" 
-      "player books donut" 
-      "player quarter quarter";  
-    gap: 20px 20px; 
-    margin-block-start: 20px; 
-  } 
- 
-  .image-sunset { 
-    grid-area: sunset; 
-    block-size: 100%; 
-  } 
-   
-  .image-ice-cream { 
-    grid-area: donut; 
-    block-size: 100%; 
-  } 
-   
-  .image-tape { 
-    grid-area: player; 
-    block-size: 100%; 
-  } 
-   
-  .image-books { 
-    grid-area: books; 
-    block-size: 100%; 
-  } 
-   
-  .image-street { 
-    grid-area: quarter; 
-    block-size: 100%; 
-  } 
+  .advice-section {
+    display: grid;
+    grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) 1fr;
+    gap: 20px;
+  }
+
+  .gallery-section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "sunset sunset donut"
+      "player books donut"
+      "player quarter quarter";
+    gap: 20px 20px;
+    margin-block-start: 20px;
+  }
+
+  .image-sunset {
+    grid-area: sunset;
+    block-size: 100%;
+  }
+
+  .image-ice-cream {
+    grid-area: donut;
+    block-size: 100%;
+  }
+
+  .image-tape {
+    grid-area: player;
+    block-size: 100%;
+  }
+
+  .image-books {
+    grid-area: books;
+    block-size: 100%;
+  }
+
+  .image-street {
+    grid-area: quarter;
+    block-size: 100%;
+  }
 }
 
-@media(width >=1024px) { 
-  .card-list { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 20px; 
-  } 
+@media (width >=1024px) {
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 
-  .less{
+  .less {
     margin-block-end: 68px;
   }
 
   .content-section__article-list-item.list-item-large-gap-gaper {
     margin-block-end: 20px;
-  } 
+  }
 }
 /* Медиа запросы */
 
@@ -390,7 +389,7 @@
   }
 }
 
-@media(width >=1024px) {
+@media (width >=1024px) {
   .final-titel {
     text-shadow: 2px 2px 0px #ff0070;
   }
